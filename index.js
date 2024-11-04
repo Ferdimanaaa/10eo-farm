@@ -1,9 +1,3 @@
-#!/bin/bash
-
-# Skrip instalasi logo
-curl -s https://raw.githubusercontent.com/Ferdimanaaa/logo.sh/refs/heads/main/logo.sh | bash
-sleep 5
-
 const axios = require('axios');
 const chalk = require('chalk');
 const WebSocket = require('ws');
@@ -31,6 +25,26 @@ let userIds = [];
 
 const authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlra25uZ3JneHV4Z2pocGxicGV5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU0MzgxNTAsImV4cCI6MjA0MTAxNDE1MH0.DRAvf8nH1ojnJBc3rD_Nw6t1AV8X_g6gmY_HByG2Mag";
 const apikey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlra25uZ3JneHV4Z2pocGxicGV5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU0MzgxNTAsImV4cCI6MjA0MTAxNDE1MH0.DRAvf8nH1ojnJBc3rD_Nw6t1AV8X_g6gmY_HByG2Mag";
+
+const chalk = require("chalk");
+
+function displayHeader() {
+  console.log("");
+  console.log(chalk.yellow(" ============================================"));
+  console.log(chalk.yellow("|                 Teneo Bot                  |"));
+  console.log(chalk.yellow(" ============================================"));
+  console.log("");
+  
+  console.log(chalk.cyan(`|  \\/  |/ __/ __| |/ /\\ \\ / /  |_   _| __/ __|_   _| \\| | __|_   _|`));
+  console.log(chalk.cyan(`| |\\/| | (_ \\__ \\ ' <  \\ V /    | | | _|\\__ \\ | | | .\` | _|  | |  `));
+  console.log(chalk.cyan(`|_|  |_|\\___|___/_|\\_\\  |_|      |_| |___|___/ |_| |_|\\_|___| |_|  `));
+  console.log("");
+  console.log(chalk.cyan("_____________________________________________"));
+}
+
+// Menjalankan fungsi untuk menampilkan header
+displayHeader();
+
 
 function displayAccountData(index) {
   console.log(chalk.cyan(`================= Account ${index + 1} =================`));
