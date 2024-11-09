@@ -28,10 +28,10 @@ ufw status
 ```
 ## Download Repository & Install Modules
 ```
-git clone https://github.com/zamzasalim/depin.git
+git clone https://github.com/Ferdimanaaa/10eo-farm.git
 ```
 ```
-cd depin/teneo
+cd 10eo-farm
 ```
 ```
 npm install
