@@ -8,7 +8,7 @@
 - **Download [Ekstension](https://chromewebstore.google.com/detail/teneo-community-node/emcclcoaglgcpoognfiggmhnhgabppkm)**
 - **Open Ektension**
 - **Create Account with email & verif email**
-- **Submit Code `Yua2i` (get 2500 point)**
+- **Submit Code `3s04Z` (get 2500 point)**
 - **Done Run Node with VPS**
 ## Install Node JS & Install Screen (jika belum punya)
 ```
