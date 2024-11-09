@@ -6,18 +6,14 @@ const axios = require('axios');
 const HttpsProxyAgent = require('https-proxy-agent');
 const chalk = require('chalk');
 
-console.log(chalk.cyan.bold(`   █████████   █████ ███████████   ██████████   ███████████      ███████    ███████████       █████████    █████████    █████████`));
-console.log(chalk.cyan.bold(`  ███░░░░░███ ░░███ ░░███░░░░░███ ░░███░░░░███ ░░███░░░░░███   ███░░░░░███ ░░███░░░░░███     ███░░░░░███  ███░░░░░███  ███░░░░░███`));
-console.log(chalk.cyan.bold(` ░███    ░███  ░███  ░███    ░███  ░███   ░░███ ░███    ░███  ███     ░░███ ░███    ░███    ░███    ░███ ░███    ░░░  ███     ░░░`));
-console.log(chalk.cyan.bold(` ░███████████  ░███  ░██████████   ░███    ░███ ░██████████  ░███      ░███ ░██████████     ░███████████ ░░█████████ ░███         `));
-console.log(chalk.cyan.bold(` ░███░░░░░███  ░███  ░███░░░░░███  ░███    ░███ ░███░░░░░███ ░███      ░███ ░███░░░░░░      ░███░░░░░███  ░░░░░░░░███░███         `));
-console.log(chalk.cyan.bold(` ░███    ░███  ░███  ░███    ░███  ░███    ███  ░███    ░███ ░░███     ███  ░███            ░███    ░███  ███    ░███░░███     ███`));
-console.log(chalk.cyan.bold(` █████   █████ █████ █████   █████ ██████████   █████   █████ ░░░███████░   █████           █████   █████░░█████████  ░░█████████`));
-console.log(chalk.cyan.bold(` ░░░░░   ░░░░░ ░░░░░ ░░░░░   ░░░░░ ░░░░░░░░░░   ░░░░░   ░░░░░    ░░░░░░░    ░░░░░           ░░░░░   ░░░░░  ░░░░░░░░░    ░░░░░░░░░  `));
+console.log(chalk.cyan.bold(`███╗░░░███╗░██████╗░░██████╗██╗░░██╗██╗░░░██╗`));
+console.log(chalk.cyan.bold(`████╗░████║██╔════╝░██╔════╝██║░██╔╝╚██╗░██╔╝`));
+console.log(chalk.cyan.bold(`██╔████╔██║██║░░██╗░╚█████╗░█████═╝░░╚████╔╝░`));
+console.log(chalk.cyan.bold(`██║╚██╔╝██║██║░░╚██╗░╚═══██╗██╔═██╗░░░╚██╔╝░░`));
+console.log(chalk.cyan.bold(`██║░╚═╝░██║╚██████╔╝██████╔╝██║░╚██╗░░░██║░░░`));
+console.log(chalk.cyan.bold(`╚═╝░░░░░╚═╝░╚═════╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░`));
 console.log(chalk.cyan.bold(`==============================================`));
 console.log(chalk.cyan.bold(`    NODE             : TENEO CLI `));
-console.log(chalk.cyan.bold(`    Telegram Channel : @airdropasc              `)); 
-console.log(chalk.cyan.bold(`    Telegram Group   : @autosultan_group        `)); 
 console.log(chalk.cyan.bold(`==============================================`));
 
 let socket = null;
