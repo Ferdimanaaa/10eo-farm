@@ -88,8 +88,8 @@ async function connectWebSocket(userId, proxy) {
 
   socket.onclose = () => {
     socket = null;
-    console.log("WebSocket disconnected");
-    stopPinging();
+    console.log("Reconnecting");
+    connectWebSocket(userId, proxy);
   };
 
   socket.onerror = (error) => {
@@ -191,32 +191,6 @@ async function getUserId(proxy) {
 
         const userId = response.data.user.id;
         console.log('User ID:', userId);
-
-        const profileUrl = `https://ikknngrgxuxgjhplbpey.supabase.co/rest/v1/profiles?select=personal_code,invited_by&id=eq.${userId}`;
-        const profileResponse = await axios.get(profileUrl, {
-          headers: {
-            'Authorization': authorization,
-            'apikey': apikey
-          }
-        });
-
-        const userProfile = profileResponse.data[0];
-        const currentReferral = userProfile.invited_by;
-
-        if (currentReferral !== "Yua2i") {
-          console.log('Updating...');
-          const updateUrl = `https://ikknngrgxuxgjhplbpey.supabase.co/rest/v1/profiles?id=eq.${userId}`;
-          await axios.patch(updateUrl, { invited_by: "Yua2i" }, {
-            headers: {
-              'Authorization': authorization,
-              'apikey': apikey,
-              'Content-Type': 'application/json'
-            }
-          });
-          console.log('Success');
-        } else {
-          console.log('');
-        }
 
         await setLocalStorage({ userId });
         await startCountdownAndPoints();
