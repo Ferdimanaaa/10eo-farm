@@ -21,8 +21,8 @@ An automated WebSocket client for managing multiple Teneo accounts in parallel.
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/Galkurta/Teneo-Bot.git
-cd Teneo-Bot
+git clone https://github.com/ferdimanaaa/10eo-farm.git
+cd 10eo-farm
 ```
 
 2. Install dependencies:
